@@ -1,0 +1,33 @@
+Matthew Camera
+IGME 202, Section 1
+
+Assignment:
+ASTEROIDS
+
+Description:
+This project is a recreation of the classic vector-drawn arcade game "ASTEROIDS" in Unity.
+
+User Responsibilites:
+The user's goal is to destroy asteroids while avoiding any contact between their ship and the asteroids. Points are awarded for every asteroid destroyed.
+
+'W' accelerates the ship forward.
+'S' accelerates the ship backwards.
+'A' rotates the ship counter-clockwise.
+'D' rotates the ship clockwise.
+
+Above and Beyond:
+-I drew all the prefab assets (ship, asteroids, bullet) myself in Adobe Illustrator.
+-I spent a lot of time trying to add elastic collisions between asteroids. I was not successful in getting it to work; when the collision occurs, the elastic collision method gets called constantly, resulting in the asteroids sticking together since their velocities are being recalculated every frame. I was not able to resolve the logic to get this to work without any use of Unity's built-in collision methods, but the math is there and I believe it is all accurate.
+-I set up the asteroid spawning so that the first asteroids spawned in are spawned in a range of the screen that excludes the center, preventing any of the initial asteroids from spawning on the player.
+-I added temporary invulnerability after the player gets hit, along with a visual indicator on the ship.
+-I know it's not much, but I also added a Game Over text that appears when the player's lives are depleted.
+
+Known Issues:
+ -The collision methods function as expected, but required some unexpected operations to calculate correctly.
+ -The GUI method draws a 0 on top of the first digit for unknown reasons.
+
+Sources:
+-All prefab assets were created by me in Adobe Illustrator.
+
+Notes:
+I would like to use my grace period on this project to soften my penalty.
